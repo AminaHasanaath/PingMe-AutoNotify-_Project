@@ -1,0 +1,129 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.autonotify"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.SEND_SMS" />
+12-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.READ_CONTACTS" />
+14-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:8:5-72
+14-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:8:22-69
+15
+16    <uses-feature
+16-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:9:5-88
+17        android:name="android.hardware.telephony"
+17-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:9:19-60
+18        android:required="false" />
+18-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:9:61-85
+19
+20    <permission
+20-->[androidx.core:core:1.12.0] C:\Users\Dell\.gradle\caches\8.12\transforms\765cfbaf2cefd588e9809aea5c4bcb42\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+21        android:name="com.autonotify.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.12.0] C:\Users\Dell\.gradle\caches\8.12\transforms\765cfbaf2cefd588e9809aea5c4bcb42\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.12.0] C:\Users\Dell\.gradle\caches\8.12\transforms\765cfbaf2cefd588e9809aea5c4bcb42\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.autonotify.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.12.0] C:\Users\Dell\.gradle\caches\8.12\transforms\765cfbaf2cefd588e9809aea5c4bcb42\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.12.0] C:\Users\Dell\.gradle\caches\8.12\transforms\765cfbaf2cefd588e9809aea5c4bcb42\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:11:5-40:19
+27        android:allowBackup="true"
+27-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:12:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.12.0] C:\Users\Dell\.gradle\caches\8.12\transforms\765cfbaf2cefd588e9809aea5c4bcb42\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:16:9-43
+32        android:label="AutoNotify"
+32-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:13:9-35
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:17:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:14:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+36-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:15:9-67
+37
+38        <!-- Launcher Activity -->
+39        <activity
+39-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:20:9-27:20
+40            android:name="com.autonotify.MainActivity"
+40-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:21:13-41
+41            android:exported="true" >
+41-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:22:13-36
+42            <intent-filter>
+42-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:23:13-26:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:24:17-69
+43-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:24:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:25:17-77
+45-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:25:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <!-- Tile Service -->
+50        <service
+50-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:30:9-38:19
+51            android:name="com.autonotify.TileReceiver"
+51-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:31:13-41
+52            android:exported="false"
+52-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:34:13-37
+53            android:label="AutoNotify Tile"
+53-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:32:13-44
+54            android:permission="android.permission.BIND_QUICK_SETTINGS" >
+54-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:33:13-72
+55            <intent-filter>
+55-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:35:13-37:29
+56                <action android:name="android.service.quicksettings.action.QS_TILE" />
+56-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:36:17-87
+56-->C:\Users\Dell\StudioProjects\PingMe_Project-\app\src\main\AndroidManifest.xml:36:25-84
+57            </intent-filter>
+58        </service>
+59        <service
+59-->[androidx.room:room-runtime:2.6.1] C:\Users\Dell\.gradle\caches\8.12\transforms\d3b95f31a15e3b4a8b5b3fd1d6dd4b2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+60            android:name="androidx.room.MultiInstanceInvalidationService"
+60-->[androidx.room:room-runtime:2.6.1] C:\Users\Dell\.gradle\caches\8.12\transforms\d3b95f31a15e3b4a8b5b3fd1d6dd4b2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+61            android:directBootAware="true"
+61-->[androidx.room:room-runtime:2.6.1] C:\Users\Dell\.gradle\caches\8.12\transforms\d3b95f31a15e3b4a8b5b3fd1d6dd4b2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+62            android:exported="false" />
+62-->[androidx.room:room-runtime:2.6.1] C:\Users\Dell\.gradle\caches\8.12\transforms\d3b95f31a15e3b4a8b5b3fd1d6dd4b2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\8.12\transforms\2d5d7acc3c77a8c8ab6617e8e0368e24\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\8.12\transforms\2d5d7acc3c77a8c8ab6617e8e0368e24\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.autonotify.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\8.12\transforms\2d5d7acc3c77a8c8ab6617e8e0368e24\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\8.12\transforms\2d5d7acc3c77a8c8ab6617e8e0368e24\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\8.12\transforms\2d5d7acc3c77a8c8ab6617e8e0368e24\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\8.12\transforms\2d5d7acc3c77a8c8ab6617e8e0368e24\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\8.12\transforms\2d5d7acc3c77a8c8ab6617e8e0368e24\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Dell\.gradle\caches\8.12\transforms\4b38110522927c50e5c5c7db3544caa9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Dell\.gradle\caches\8.12\transforms\4b38110522927c50e5c5c7db3544caa9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Dell\.gradle\caches\8.12\transforms\4b38110522927c50e5c5c7db3544caa9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+74        </provider>
+75    </application>
+76
+77</manifest>
